@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.scatchdrmo">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -11,7 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ScatchDrmo">
-        <activity android:name=".InformationTechPage"></activity>
+
+        <activity android:name=".AnotherActivity" android:parentActivityName=".ComputerSciencePage"></activity>
+        <activity android:name=".AnotherActivity2" android:parentActivityName=".InformationTechPage"></activity>
+
+        <activity android:name=".InformationTechPage" />
         <activity android:name=".ComputerSciencePage" />
         <activity android:name=".MainActivity">
             <intent-filter>
